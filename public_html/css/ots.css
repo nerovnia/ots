@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+table {
+	border: thin solid black;
+	border-spacing: 1px;
+	border-collapse: collapse;
+}
+
+td, tr, th, thead, tbody {
+	border: thin solid black;
+	border-spacing: 1px;
+}
+
+thead {
+	background: #006000;
+	color: white;
+}
+
+h1 {
+	color: #006000;	
+	text-align: center;
+}
+
+.a-center {
+	text-align: center;
+}

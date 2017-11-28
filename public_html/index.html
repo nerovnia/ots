@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>"Струмознімання"</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!--
+		      <link rel="stylesheet" href="css/ots.css">
+          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+           <link rel="stylesheet" href="/resources/demos/style.css">
+          <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.4.0.css">
+          <script src="js/jquery-3.2.1.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/jquery.nerv.new.inpformatcontrol.js"></script>
+        <script src="js/ots.js"></script>
+-->
+        <!-- <script src="js/bootstrap/js/bootstrap.js"></script> -->
+        <!-- <script src="https://code.jquery.com/qunit/qunit-2.4.0.js"></script> -->
+        <!-- <script src="../test/js/tests.js"></script>-->
+    </head>
+    <body>
+      <div id="qunit"></div>
+      <div id="qunit-fixture"></div>
+        <div>
+		        <H1>Інформація по операції "Струмознімання"</H1>
+            <table>
+                <thead>
+                <tr>
+                    <th> Цех </th>
+                    <th> Парні / Непарні </th	>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <select id="sel-echk">
+                            <option value="echk14"> ЕЧК-14 </option>
+                            <option value="echk15"> ЕЧК-15 </option>
+                            <option value="echk25"> ЕЧК-25</option>
+                            <option value="echk16"> ЕЧК-16</option>
+                            <option value="echk17"> ЕЧК-17 </option>
+                            <option value="echk18"> ЕЧК-18 </option>
+                            <option value="echk46"> ЕЧК-46 </option>
+						</select>
+
+					</td>
+                    <td>
+                        <select id="sel-parn">
+                            <option value="parn"> Парні </option>
+                            <option value="neparn">  Непарні </option>
+					</td>
+                </tr>
+            </table>
+			</br>
+			<table>
+                <thead>
+                <tr>
+                    <th> Час </th>
+                    <th> Марка ЕПС </th>
+                    <th> Додати </th>
+                    <th> Виявлені зауваження </th>
+                    <th> Примітка </th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+<!--                      <input id="inpTime" type="text"> -->
+<div class="ui-widget">
+<label for="tags">Tags: </label>
+<input id="tags">
+</div>
+                    </td>
+                    <td>
+                        <select  id="sel-mark-eps">
+                            <option value="ВЛ"> ВЛ </option>
+                            <option value="ЧС"> ЧС </option>
+                            <option value="ЭР"> ЭР </option>
+                        </select>
+                    </td>
+                    <td><button id="btn-add-eps"> Додати </button></td>
+                    <td>
+                        <input id="zauv" type="text">
+                    </td>
+                    <td>
+                        <input id="prim" type="text">
+					</td>
+                </tr>
+            </table>
+			</br>
+            <table>
+                <thead>
+					<tr>
+						<th rowspan="2"> Місце огляду </th>
+						<th colspan="4"> Кількість оглянутих струмоприймачів </th>
+						<th rowspan="2"> Виявлені зауваження </th>
+						<th rowspan="2"> Примітка </th>
+					</tr>
+					<tr>
+						<th>  час </th>
+						<th>  пар. </th>
+						<th>  час </th>
+						<th>  неп. </th>
+					</tr>
+                <thead>
+                <tbody>
+                    <tr>
+                        <td> ст. Х-Михайловский депо </td>
+                        <td><div id="s-p-time"> &nbsp; </div></td>
+                        <td><div id="s-p-eps"> &nbsp; </div></td>
+                        <td><div id="s-n-time"> &nbsp; </div></td>
+                        <td><div id="s-n-eps"> &nbsp; </div></td>
+                        <td><div id="s-zauv"> &nbsp; </div></td>
+                        <td><div id="s-prim"> &nbsp; </div></td>
+                    </tr>
+                    <tr>
+                        <td>ст. Терещенська</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>ст. Кролевець</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>ст. Конотоп депо</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>ст. Бахмач</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>ст. Крути</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>ст. Ворожба депо</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+           </table>
+        </div>
+    </body>
+</html>
